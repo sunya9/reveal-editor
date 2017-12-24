@@ -1,0 +1,76 @@
+@import 'override';
+@import '~bulma/bulma';
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+pre code {
+  white-space: pre-wrap;
+}
+
+.modal-card-foot {
+  justify-content: flex-end;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: all .5s;
+}
+.slide-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.slide-leave-to {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.separator {
+  background: $grey-lighter;
+  width: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: .5rem 0;
+}
+
+.holygrail {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+.holygrail-contents {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  > .tile {
+    min-height: 0;
+  }
+}
+.card-header-title {
+  white-space: nowrap;
+  overflow: hidden;
+  span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.hidden {
+  display: none;
+}

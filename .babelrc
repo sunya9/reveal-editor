@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["env", {
+      "exclude": [
+        "transform-regenerator"
+      ],
+      "useBuiltIns": true
+    }]
+  ],
+  "plugins": ["transform-object-rest-spread"]
+}
