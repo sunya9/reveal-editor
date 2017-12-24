@@ -1,7 +1,7 @@
 {
   "name": "reveal-editor",
   "productName": "Reveal editor",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "main.js",
   "repository": "git@github.com:sunya9/reveal-editor.git",
   "author": "sunya9 <mugen.xyz@gmail.com>",
